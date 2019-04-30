@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {Route, Link} from 'react-router-dom'
 import Home from '../home'
 import About from '../about'
-import {pushRotate as Menu} from 'react-burger-menu'
+import {push as Menu} from 'react-burger-menu'
 import './index.css'
 
 class App extends Component {
