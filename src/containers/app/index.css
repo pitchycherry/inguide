@@ -1,9 +1,14 @@
 #page-wrap {
-    background: url("../../static/back.jpg") no-repeat center center fixed;
-    -moz-background-size: cover; /* Firefox 3.6+ */
-    -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: cover; /* Opera 9.6+ */
-    background-size: cover; /* Современные браузеры */
+     background: url("../../static/back.jpg") no-repeat center center fixed;
+     -moz-background-size: cover; /* Firefox 3.6+ */
+     -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+     -o-background-size: cover; /* Opera 9.6+ */
+     background-size: cover; /* Современные браузеры */
+ }
+@media (max-width: 768px) {
+    #page-wrap {
+        background: url("../../static/back-mid.jpg") no-repeat center center fixed;
+    }
 }
 .empty {
     height: 1000px;
@@ -14,6 +19,31 @@
 }
 a,button:focus {
     outline: none !important;
+}
+
+/* xs (<=543px) */
+@media (max-width: 575px) {
+
+}
+
+/* sm (>=576 и <=767) */
+@media (min-width: 576px) and (max-width: 767px) {
+
+}
+
+/* md (>=768 и <=991) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* lg (>=992 и <=1199) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* xl (>=1200) */
+@media (min-width: 1200px) {
+
 }
 
 /*For menu*/
