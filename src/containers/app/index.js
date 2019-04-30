@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {Route, Link} from 'react-router-dom'
 import Home from '../home'
 import About from '../about'
-import {scaleRotate as Menu} from 'react-burger-menu'
+import {pushRotate as Menu} from 'react-burger-menu'
 import './index.css'
 
 class App extends Component {
@@ -29,6 +29,9 @@ class App extends Component {
                 <main id="page-wrap">
                     <Route exact path="/" component={Home}/>
                     <Route exact path="/about-us" component={About}/>
+                    <div className="hei">
+
+                    </div>
                     <div className="empty">
 
                     </div>
