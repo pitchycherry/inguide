@@ -10,7 +10,7 @@ const Header = () => (
                 </div>
                 <div className="col text-right mt-3">
                     <div className="dropdown">
-                        <button className="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton"
+                        <button className="btn btn-outline-dark dropdown-toggle dropdown__language" type="button" id="dropdownMenuButton"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Выбрать язык
                         </button>
