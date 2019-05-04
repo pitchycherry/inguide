@@ -5,11 +5,7 @@
      -o-background-size: cover; /* Opera 9.6+ */
      background-size: cover; /* Современные браузеры */
  }
-@media only screen and (max-width: 767px) {
-    #page-wrap {
-        //background: url("../../static/back-mid.jpg") no-repeat center center fixed;
-    }
-}
+
 .parallax {
     height: 300px;
     background-color: white;
