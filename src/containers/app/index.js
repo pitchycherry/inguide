@@ -30,10 +30,34 @@ class App extends Component {
                     <Route exact path="/" component={Home}/>
                     <Route exact path="/about-us" component={About}/>
                     <div className="hei">
-
+                        <h1>Новый пост</h1>
                     </div>
                     <div className="empty">
-
+                        <h1>Интересная штука</h1>
+                    </div>
+                    <div className="empty">
+                        <h1>Интересная штука</h1>
+                    </div>
+                    <div className="empty">
+                        <h1>Интересная штука</h1>
+                    </div>
+                    <div className="empty">
+                        <h1>Интересная штука</h1>
+                    </div>
+                    <div className="empty">
+                        <h1>Интересная штука</h1>
+                    </div>
+                    <div className="empty">
+                        <h1>Интересная штука</h1>
+                    </div>
+                    <div className="empty">
+                        <h1>Интересная штука</h1>
+                    </div>
+                    <div className="parallax">
+                        <h1>Это параллакс блок</h1>
+                    </div>
+                    <div className="empty">
+                        <h1>Интересная штука</h1>
                     </div>
                 </main>
             </div>
