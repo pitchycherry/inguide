@@ -1,9 +1,10 @@
 import React, {Component} from 'react'
 import {Route, Link} from 'react-router-dom'
-import Home from '../home'
 import About from '../about'
 import {push as Menu} from 'react-burger-menu'
 import './index.css'
+import Header from "../header";
+import News from "../news";
 
 class App extends Component {
     state = {
@@ -23,42 +24,32 @@ class App extends Component {
             <div id="outer-container">
                 <Menu isOpen={this.state.menuOpen} onStateChange={(state) => this.handleStateChange(state)}
                       pageWrapId={"page-wrap"} outerContainerId={"outer-container"}>
-                    <Link to="/" onClick={() => this.closeMenu()}>Home</Link>
-                    <Link to="/about-us" onClick={() => this.closeMenu()}>About</Link>
+                    <Link to="/about" onClick={() => this.closeMenu()}>О нас</Link>
+                    <p>InGuide рекоммендует</p>
+                    <Link to="/" onClick={() => this.closeMenu()}>Авиабилеты</Link>
+                    <Link to="/" onClick={() => this.closeMenu()}>Отели</Link>
+                    <Link to="/" onClick={() => this.closeMenu()}>Аппартаменты</Link>
+
+                    <Link to="/" onClick={() => this.closeMenu()}>Задать вопрос</Link>
+                    <div className="container">
+                        <div className="social_network row d-flex justify-content-around">
+                            <Link to="/" onClick={() => this.closeMenu()}><i className="fa fa-vk"
+                                                                             aria-hidden="true"> </i></Link>
+                            <Link to="/" onClick={() => this.closeMenu()}><i className="fa fa-instagram"
+                                                                             aria-hidden="true"> </i></Link>
+                            <Link to="/" onClick={() => this.closeMenu()}><i className="fa fa-facebook-square"
+                                                                             aria-hidden="true"> </i></Link>
+                        </div>
+                    </div>
                 </Menu>
                 <main id="page-wrap">
-                    <Route exact path="/" component={Home}/>
-                    <Route exact path="/about-us" component={About}/>
-                    <div className="hei">
-                        <h1>Новый пост</h1>
+                    <div className="main__block">
+                        <Header/>
+                        <Route exact path="/" component={About}/>
+                        <Route exact path="/about" component={About}/>
                     </div>
-                    <div className="empty">
-                        <h1>Интересная штука</h1>
-                    </div>
-                    <div className="empty">
-                        <h1>Интересная штука</h1>
-                    </div>
-                    <div className="empty">
-                        <h1>Интересная штука</h1>
-                    </div>
-                    <div className="empty">
-                        <h1>Интересная штука</h1>
-                    </div>
-                    <div className="empty">
-                        <h1>Интересная штука</h1>
-                    </div>
-                    <div className="empty">
-                        <h1>Интересная штука</h1>
-                    </div>
-                    <div className="empty">
-                        <h1>Интересная штука</h1>
-                    </div>
-                    <div className="parallax">
-                        <h1>Это параллакс блок</h1>
-                    </div>
-                    <div className="empty">
-                        <h1>Интересная штука</h1>
-                    </div>
+
+                    <News/>
                 </main>
             </div>
         )
