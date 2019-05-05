@@ -51,7 +51,7 @@ a, button:focus {
         font-size: 10px !important;
     }
     body {
-        background: url("../../static/photoeditorsdk-export.png") no-repeat center center fixed;
+        background: url("../../static/back-mid.jpg") no-repeat center center fixed;
         -moz-background-size: cover; /* Firefox 3.6+ */
         -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
         -o-background-size: cover; /* Opera 9.6+ */
@@ -68,7 +68,7 @@ a, button:focus {
         font-size: 15px !important;
     }
     body {
-        background: url("../../static/photoeditorsdk-export.png") no-repeat center center fixed;
+        background: url("../../static/back-mid.jpg") no-repeat center center fixed;
         -moz-background-size: cover; /* Firefox 3.6+ */
         -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
         -o-background-size: cover; /* Opera 9.6+ */
@@ -78,13 +78,7 @@ a, button:focus {
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
-    body {
-        background: url("../../static/photoeditorsdk-export.png") no-repeat center center fixed;
-        -moz-background-size: cover; /* Firefox 3.6+ */
-        -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
-        -o-background-size: cover; /* Opera 9.6+ */
-        background-size: cover; /* Современные браузеры */
-    }
+
 }
 
 /* Large devices (desktops, 992px and up)*/
