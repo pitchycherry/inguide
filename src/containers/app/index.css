@@ -5,8 +5,9 @@ body {
     font-weight: lighter !important;
 
 }
+
 #outer-container {
-    background-image: url("../../static/back.jpg");
+    background-image: url("../../static/back.png");
     position: absolute;
     top: 0;
     left: 0;
@@ -17,6 +18,7 @@ body {
     -o-background-size: cover; /* Opera 9.6+ */
     background-size: cover; /* Современные браузеры */
 }
+
 body p {
     margin-top: 1rem;
 }
@@ -37,6 +39,12 @@ body p {
     height: 100vh;
 }
 
+.main-form {
+    background: rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    text-align: left;
+}
+
 a, button:focus {
     outline: none !important;
 }
@@ -53,6 +61,7 @@ a, button:focus {
     .title {
         font-size: 15px;
     }
+
     .dropdown__language {
         font-size: 10px !important;
     }
@@ -64,6 +73,7 @@ a, button:focus {
     .title {
         font-size: 25px;
     }
+
     .dropdown__language {
         font-size: 15px !important;
     }

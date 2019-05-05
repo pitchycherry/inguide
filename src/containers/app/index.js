@@ -45,6 +45,27 @@ class App extends Component {
                 <main id="page-wrap">
                     <div className="main__block">
                         <Header/>
+                        <div className="col-4 offset-6 main-form">
+                            <form method="post" action="#" autoComplete="off">
+                                <div className="form-group">
+                                    <label htmlFor="email">Email адрес</label>
+                                    <input name="email" type="email" className="form-control" id="email"
+                                           placeholder="Введите email"/>
+                                </div>
+                                <div className="form-group">
+                                    <label htmlFor="password">Password</label>
+                                    <input name="password" type="password" className="form-control" id="password"
+                                           placeholder="Введите пароль"/>
+                                </div>
+                                <div className="form-group form-check">
+                                    <input type="checkbox" className="form-check-input" id="save"/>
+                                    <label name="save" className="form-check-label" htmlFor="save">запомнить
+                                        меня</label>
+                                </div>
+                                <button type="submit" className="btn btn-outline-dark form-button">Войти</button>
+                            </form>
+                        </div>
+
                         <Route exact path="/" component={About}/>
                         <Route exact path="/about" component={About}/>
                     </div>
