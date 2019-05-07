@@ -1,31 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
-@import url('https://fonts.googleapis.com/css?family=Forum');
-@font-face {
-    font-family: "Cartoon";
-    src: url("../../static/Carton-Slab.otf");
-}
+
+/*Logo*/
 @font-face {
     font-family: "Farray";
     src: url("../../static/FARRAY.otf");
 }
+
+.farray {
+    font-family: "Farray", sans-serif;
+    user-select: none;
+}
+
+.px25 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.px35 {
+    font-size: 35px;
+}
+
+/*Logo*/
+
 body {
     font-family: 'Open Sans', sans-serif !important;
     font-weight: lighter !important;
 
 }
-.farray {
-    font-family: "Farray", sans-serif;
-    font-size: 35px;
-}
 
-.cartoon {
-    font-family: "Cartoon", sans-serif;
-    font-size: 35px;
-}
-.forum {
-    font-family: 'Forum', cursive;
-    font-size: 55px;
-}
 #outer-container {
     background-image: url("../../static/back.png");
     /*background-attachment: fixed;*/
@@ -38,6 +40,10 @@ body {
     -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: cover; /* Opera 9.6+ */
     background-size: cover; /* Современные браузеры */
+}
+
+.dropdown-item {
+    cursor: pointer;
 }
 
 body p {
@@ -87,6 +93,13 @@ a, button:focus {
         font-size: 10px !important;
     }
 
+    .px35 {
+        font-size: 15px;
+    }
+
+    .px25 {
+        font-size: 10px;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -96,7 +109,15 @@ a, button:focus {
     }
 
     .dropdown__language {
-        font-size: 15px !important;
+        font-size: 15px;
+    }
+
+    .px35 {
+        font-size: 20px;
+    }
+
+    .px25 {
+        font-size: 15px;
     }
 }
 

@@ -13,8 +13,7 @@ class Header extends Component {
                     <div className="row">
                         <div className="col"> </div>
                         <div className="col mt-1">
-                            <p className="farray">InGuide</p>
-                            <p className="forum">InGuide</p>
+                            <span className="farray px35">I</span><span className="farray px25">n</span><span className="farray px35">G</span><span className="farray px25">uide</span>
                         </div>
                         <div className="col text-right mt-3">
                             <div className="dropdown">
