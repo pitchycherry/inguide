@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
-import counter from './counter'
+import header_reducer from '../containers/header/ducks'
 
 export default combineReducers({
-  counter
+  header_reducer
 })

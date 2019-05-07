@@ -5,6 +5,7 @@ import {push as Menu} from 'react-burger-menu'
 import './index.css'
 import Header from "../header";
 import News from "../news";
+import {connect} from "react-redux";
 
 class App extends Component {
     state = {
@@ -20,17 +21,19 @@ class App extends Component {
     }
 
     render() {
+        const lang = this.props.language;
         return (
             <div id="outer-container">
                 <Menu isOpen={this.state.menuOpen} onStateChange={(state) => this.handleStateChange(state)}
                       pageWrapId={"page-wrap"} outerContainerId={"outer-container"}>
-                    <Link to="/about" onClick={() => this.closeMenu()}>О нас</Link>
-                    <p>InGuide рекоммендует</p>
-                    <Link to="/" onClick={() => this.closeMenu()}>Авиабилеты</Link>
-                    <Link to="/" onClick={() => this.closeMenu()}>Отели</Link>
-                    <Link to="/" onClick={() => this.closeMenu()}>Аппартаменты</Link>
+                    <Link to="/about" onClick={() => this.closeMenu()}>{lang ? 'О нас' : 'About us'}</Link>
+                    <p>{lang ? 'InGuide рекомендует' : 'InGuide recommends'}</p>
+                    <Link to="/" onClick={() => this.closeMenu()}>{lang ? 'Авиабилеты' : 'Air tickets'}</Link>
+                    <Link to="/" onClick={() => this.closeMenu()}>{lang ? 'Отели' : 'Hotels'}</Link>
+                    <Link to="/" onClick={() => this.closeMenu()}>{lang ? 'Апартаменты' : 'Apartments'}</Link>
+                    <Link to="/" onClick={() => this.closeMenu()}>{lang ? 'Где купить' : 'Where can you buy'}</Link>
 
-                    <Link to="/" onClick={() => this.closeMenu()}>Задать вопрос</Link>
+                    <Link to="/" onClick={() => this.closeMenu()}>{lang ? 'Задать вопрос' : 'Ask a question'}</Link>
                     <div className="container">
                         <div className="social_network row d-flex justify-content-around">
                             <Link to="/" onClick={() => this.closeMenu()}><i className="fa fa-vk"
@@ -45,26 +48,6 @@ class App extends Component {
                 <main id="page-wrap">
                     <div className="main__block">
                         <Header/>
-                        <div className="col-4 offset-6 main-form">
-                            <form method="post" action="#" autoComplete="off">
-                                <div className="form-group">
-                                    <label htmlFor="email">Email адрес</label>
-                                    <input name="email" type="email" className="form-control" id="email"
-                                           placeholder="Введите email"/>
-                                </div>
-                                <div className="form-group">
-                                    <label htmlFor="password">Password</label>
-                                    <input name="password" type="password" className="form-control" id="password"
-                                           placeholder="Введите пароль"/>
-                                </div>
-                                <div className="form-group form-check">
-                                    <input type="checkbox" className="form-check-input" id="save"/>
-                                    <label name="save" className="form-check-label" htmlFor="save">запомнить
-                                        меня</label>
-                                </div>
-                                <button type="submit" className="btn btn-outline-dark form-button">Войти</button>
-                            </form>
-                        </div>
 
                         <Route exact path="/" component={About}/>
                         <Route exact path="/about" component={About}/>
@@ -77,4 +60,10 @@ class App extends Component {
     }
 }
 
-export default App
+const mapStateToProps = ({header_reducer}) => ({
+    language: header_reducer.language
+});
+
+export default connect(
+    mapStateToProps
+)(App)
