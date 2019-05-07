@@ -14,7 +14,7 @@ class Header extends Component {
                         <div className="col"> </div>
                         <div className="col mt-1">
                             <p className="farray">InGuide</p>
-                            <p className="cartoon">InGuide</p>
+                            <p className="forum">InGuide</p>
                         </div>
                         <div className="col text-right mt-3">
                             <div className="dropdown">
