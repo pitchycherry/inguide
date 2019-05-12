@@ -11,9 +11,10 @@ class Header extends Component {
             <Fragment>
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col"> </div>
-                        <div className="col mt-1">
-                            <span className="farray px35">I</span><span className="farray px25">n</span><span className="farray px35">G</span><span className="farray px25">uide</span>
+                        <div className="col"></div>
+                        <div className="col">
+                            <p><span className="farray px35">I</span><span className="farray px25">n</span><span
+                                className="farray px35">G</span><span className="farray px25">uide</span></p>
                         </div>
                         <div className="col text-right mt-3">
                             <div className="dropdown">
