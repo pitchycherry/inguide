@@ -2,6 +2,7 @@ import React, {Component, Fragment} from 'react'
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import {change_language} from './ducks'
+import logo from '../../static/logo.png'
 
 class Header extends Component {
 
@@ -13,8 +14,7 @@ class Header extends Component {
                     <div className="row">
                         <div className="col"></div>
                         <div className="col">
-                            <p><span className="farray px35">I</span><span className="farray px25">n</span><span
-                                className="farray px35">G</span><span className="farray px25">uide</span></p>
+                            <img src={logo} className="logo"/>
                         </div>
                         <div className="col text-right mt-3">
                             <div className="dropdown">
