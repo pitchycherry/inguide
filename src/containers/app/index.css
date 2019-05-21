@@ -184,6 +184,10 @@ a, button:focus {
     .dropdown__language {
         font-size: 10px !important;
     }
+
+    .logo {
+        width: 100px;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -194,6 +198,10 @@ a, button:focus {
 
     .dropdown__language {
         font-size: 15px;
+    }
+
+    .logo {
+        width: 150px;
     }
 
 }
